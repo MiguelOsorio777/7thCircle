@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    double laptops, relojes, celulares, precio, PCs, cantidadproductos=0, subtotal=0, descuento, totalpagar;
-    cout << "ingrese cantidad de laptops:";
-    cin >>  laptops;
+    double audifonos, relojes, celulares, precio, PCs, cantidadproductos=0, subtotal=0, descuento, totalpagar;
+    cout << "ingrese cantidad de audifonos:";
+    cin >>  audifonos;
     cout << "ingrese cantidad de relojes:";
     cin >>  relojes;
     cout << "ingrese cantidad de celulares:";
@@ -13,11 +13,11 @@ int main()
     cin >>  PCs;
     cout << "ingrese precio: ";
     cin >> precio;
-    cantidadproductos= laptops + relojes + celulares + PCs;
+    cantidadproductos= audifonos + relojes + celulares + PCs;
     subtotal= cantidadproductos*precio;
     descuento= subtotal
     
-    if (cantidadproductos==laptops>10)
+    if (cantidadproductos==audifonos>10)
     {
         (descuento = subtotal*0.20);
     }
@@ -38,6 +38,7 @@ int main()
         descuento = 0;
     }
     totalpagar=subtotal-descuento;
+
     cout<< "la cantidad es: " << cantidad << endl;
     cout << "el subtotal es: " << subtotal << endl;
     cout << "el descuento es: " << descuento << endl;
